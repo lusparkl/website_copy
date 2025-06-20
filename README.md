@@ -1,16 +1,25 @@
-# Website Snapshots
+# Website Pages
 
-This repository contains archived snapshots of the algosone.ai site.
+This repository archives multiple pages from the algosone.ai website.
 
-The structure after cleanup is:
+All pages are stored under `algosone-ai/pages`. Each directory corresponds
+to one page of the site and contains that page's HTML and assets.
 
 ```
 algosone-ai/
-  snapshots/
-    snapshot00/
-    snapshot01/
-    ...
-    snapshot10/
+  pages/
+    home/
+    ai-crypto-trading/
+    technology/
+    profitability/
+    markets/
+    reviews/
+    about/
+    affiliates/
+    trust-center/
+    faq/
+    contact/
 ```
 
-Each `snapshotXX` directory holds the saved site resources for a specific download.
+These folders hold the saved site resources exactly as downloaded so they
+can be edited independently.
