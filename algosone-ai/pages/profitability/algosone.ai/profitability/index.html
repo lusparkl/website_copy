@@ -293,14 +293,31 @@
       type="text/javascript"
       src="../../widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
     ></script>
-    <style>
+  <style>
       /* custom spacing fixes */
       #page-header .page-header-inner {
         padding-top: 100px;
         padding-bottom: 40px;
       }
       .figure-4 { display: none; }
-    </style>
+      /* spacing tweaks for profitability page */
+      @media (min-width:1024px) {
+        /* smaller gap before "Grow your capital" section */
+        .s-profit--about {
+          padding-top: 30px;
+        }
+        /* smaller gap after AI optimized trading contracts */
+        .s-profit--plans {
+          margin-bottom: 40px;
+        }
+      }
+      @media (max-width:1023px) {
+        /* larger gap after AI optimized trading contracts on mobile */
+        .s-profit--plans {
+          margin-bottom: 80px;
+        }
+      }
+  </style>
   </head>
   <body
     class="wp-singular page-template-default page page-id-31 wp-embed-responsive wp-theme-common tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor is-chrome"
