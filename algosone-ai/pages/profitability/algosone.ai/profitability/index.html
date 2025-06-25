@@ -299,16 +299,25 @@
         padding-top: 100px;
         padding-bottom: 20px;
       }
+      /* reduce hero height to remove large gap above "Grow your capital" */
+      #page-header.ph-full {
+        min-height: 60vh !important;
+      }
       .figure-4 { display: none; }
       /* spacing tweaks for profitability page */
       @media (min-width:1024px) {
         /* smaller gap before "Grow your capital" section */
         .s-profit--about {
           padding-top: 10px;
+          padding-bottom: 80px !important;
         }
         /* smaller gap after AI optimized trading contracts */
         .s-profit--plans {
           margin-bottom: 10px;
+          padding-top: 80px !important;
+        }
+        .s-profit--plans .f-robot {
+          height: 600px !important;
         }
       }
       @media (max-width:1023px) {
